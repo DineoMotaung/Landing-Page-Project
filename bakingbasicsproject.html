@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baking with love🎂❤</title>
+    <style>
+      body {
+        background: #a75d5d;
+      }
+      div {
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 35px;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        margin: 5px 0 15px;
+      }
+      img {
+        display: block;
+        margin: 0;
+        max-width: 300px;
+        max-height: 300px;
+      }
+      h3 {
+        text-decoration: underline;
+      }
+      p {
+        font-weight: 500;
+      }
+      span {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      a {
+        color: #612c2ce7;
+        line-height: 5px;
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        color: #a75d5d;
+        display: block;
+        background: #ffc3a1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 20px;
+        margin: 0 auto;
+        border: 2px solid #a75d5d;
+        border-radius: 25px;
+        box-shadow: 7px 4px 5px rgb(92, 85, 85);
+        transition: all 200ms ease;
+      }
+
+      button:hover {
+        color: #ffc3a1;
+        background: #a75d5d;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 15x;
+        margin: 20px;
+      }
+      .container {
+        display: block;
+        background: linear-gradient(#d3756b, #f0997d, #ffc3a1, #d3756b);
+        border-radius: 10px;
+        max-width: 600px;
+        padding: 20px 40px;
+        margin: 10px auto 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin: 10px 0;
+      }
+      .grid img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all 20ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><em>Baking with love🎂❤</em></h1>
+      <h2>Some treats I've made for my loved ones!</h2>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/881/original/IMG_7227.jpg?1681900529"
+          alt="niece's 12th birthday cake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/883/original/IMG_7232.jpg?1681900602"
+          alt="white chocolate cake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/882/original/IMG_7230.JPG?1681900568"
+          alt="custard slices"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/880/original/IMG_7225.jpg?1681900495"
+          alt="chocolate cake with sprinkles"
+        />
+      </div>
+      <h3>
+        Cakes, muffins, bread and even pie, bake to your heart's content!!
+      </h3>
+      <p>
+        You don't have to be a professional to <span>bake</span> just ask me. I
+        learned how to <span>bake</span> purely by trial and error, and that's
+        what I love most about <span>baking.</span> There is so much room for
+        growth and improvement. <span>Baking</span> is controlled entirely by
+        you and of course whatever ingredients you have on hand. You want to
+        bake an onion tart with honey, have at it. Whatever you can imagine, I'm
+        sure you can make it. But don't blame me if whatever you make doesn't
+        taste so great, it is your imagination's fault after all.
+      </p>
+      <br />
+      <a href="https://www.chocolateforbasil.com/" target="_blank"
+        ><strong>Learn more about baking</strong></a
+      >
+      <br />
+      <br />
+      <button>Bake with me</button>
+      <br />
+      <hr width="100%" color="black" />
+      <footer><strong>Coded by Dineo Portia Motaung</strong></footer>
+    </div>
+    <script>
+      function canBake() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+      }
+
+      function bakeWithMe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (canBake()) {
+          alert(`Thank you ${name}, we'll be in touch. Let's get baking💃🎂`);
+        } else {
+          alert(`Sorry ${name}, you cannot bake with us. Enjoy your day🙂`);
+        }
+      }
+
+      let bakeButton = document.querySelector("button");
+      bakeButton.addEventListener("click", bakeWithMe);
+    </script>
+  </body>
+</html>
